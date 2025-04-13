@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Dostyq Анкетасы</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .radio-group {
+      margin-top: 5px;
+    }
+    .radio-group input {
+      margin-right: 5px;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: #0e3d73;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #091f40;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Dostyq Анкетасы</h2>
+
+    <form action="https://formsubmit.co/younick9009@gmail.com" method="POST">
+
+      <label>Аты-жөніңіз:</label>
+      <input type="text" name="Аты-жөніңіз" required>
+
+      <label>Телефон нөміріңіз:</label>
+      <input type="tel" name="Телефон" required>
+
+      <label>Dostyq тазалығы туралы ойыңыз:</label>
+      <textarea name="Тазалық туралы пікір" rows="2"></textarea>
+
+      <label>Dostyq мұғалімдері туралы пікіріңіз:</label>
+      <textarea name="Мұғалімдер туралы пікір" rows="2"></textarea>
+
+      <label>Сүйікті пәніңіз:</label>
+      <textarea name="Сүйікті пән" rows="2"></textarea>
+
+      <label>Сіз қандай сусынды ұнатасыз?</label>
+      <div class="radio-group">
+        <input type="radio" name="Сусын" value="Кофе"> Кофе
+        <input type="radio" name="Сусын" value="Шай"> Шай
+        <input type="radio" name="Сусын" value="Сок"> Сок
+      </div>
+
+      <label>Қосымша комментарий:</label>
+      <textarea name="Қосымша" rows="3"></textarea>
+
+      <button type="submit">Анкетаны жіберу</button>
+    </form>
+  </div>
+
+</body>
+</html>
